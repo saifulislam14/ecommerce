@@ -56,7 +56,7 @@ return [
             'driver' => 'token',
             'provider' => 'admins',
             'hash' => false,
-        ,
+        ],
     ],
 
     /*
