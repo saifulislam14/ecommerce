@@ -1,5 +1,7 @@
 <?php
 
+require 'admin.php';
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +16,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::view('/admin', 'admin.dashboard.index');
 Route::view('/blankpage', 'admin.dashboard.blank-page');
 Route::view('/charts', 'admin.dashboard.charts');
 Route::view('/fcomponentes', 'admin.dashboard.form-components');
@@ -30,5 +31,3 @@ Route::view('/tbasic', 'admin.dashboard.table-basic');
 Route::view('/tdata', 'admin.dashboard.table-data-table');
 Route::view('/uicards', 'admin.dashboard.ui-cards');
 Route::view('/widgest', 'admin.dashboard.widgest');
-Route::view('/login', 'admin.auth.login');
-Route::view('/lockscreen', 'admin.auth.page-lockscreen');
